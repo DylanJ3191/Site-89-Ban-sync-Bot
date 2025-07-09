@@ -49,7 +49,7 @@ async function fetchUserTags(userIds) {
 }
 
 async function sendMassWebhook(guild, userIds, action) {
-  const webhookUrl = process.env.WEBHOOK_URL;
+  const webhookUrl = process.env.WEBHOOK_OUTPUT;
   if (!webhookUrl) return;
 
   const userTags = await fetchUserTags(userIds);
