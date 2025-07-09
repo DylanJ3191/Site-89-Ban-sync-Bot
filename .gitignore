@@ -1,0 +1,10 @@
+# Ignore all .env files
+.env
+.env.*   # Covers things like .env.local, .env.production, etc.
+
+# Optional: Ignore any .env files in subdirectories too
+**/.env
+**/.env.*
+
+# Safety: don't ignore a sample env file (if you provide a template)
+# !.env.example
